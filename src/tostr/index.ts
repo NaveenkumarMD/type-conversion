@@ -4,8 +4,14 @@
  *  A method which convert the given argument to a string.
  */
 
-function tostr(x: any): string {
+function tostr(x?: any): string {
+    
+    if (x === undefined) {
+        return ""
+    }
+
     let datatype: any = typeof x;
+
     if (datatype === "string") {
         return x;
     }
@@ -15,7 +21,7 @@ function tostr(x: any): string {
     else if (datatype == "boolean") {
         return x.toString();
     }
-    else if (datatype == "null") {
+    else if (x === null) {
         return ""
     }
     else if (datatype == "object") {

@@ -3,6 +3,13 @@
   "license": "MIT",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/NaveenkumarMD/type-conversion"
+  },
+  "keywords": [
+    "types","type conversion" ,"data types","string","number","boolean","array","object"
+  ],
   "files": [
     "dist",
     "src"
@@ -31,16 +38,18 @@
     "singleQuote": true,
     "trailingComma": "es5"
   },
-  "name": "type-coversion",
+  "name": "type-conversion",
   "author": "Naveenkumar M",
-  "module": "dist/type-coversion.esm.js",
+
+  "module": "dist/type-conversion.esm.js",
+  "description": "A javascript module which helps in various data type conversion",
   "size-limit": [
     {
-      "path": "dist/type-coversion.cjs.production.min.js",
+      "path": "dist/type-conversion.cjs.production.min.js",
       "limit": "10 KB"
     },
     {
-      "path": "dist/type-coversion.esm.js",
+      "path": "dist/type-conversion.esm.js",
       "limit": "10 KB"
     }
   ],
